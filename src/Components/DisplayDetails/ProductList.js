@@ -1,7 +1,7 @@
 import React from "react";
 import ProductDetails from "./ProductDetails";
 const ProductList = (props) => {
-  console.log(props);
+  //console.log(props);
   return (
     <React.Fragment>
       <h1>Products</h1>
@@ -14,6 +14,7 @@ const ProductList = (props) => {
               name={seller.Name}
             ></ProductDetails>
           </div>
+          
         );
       })}
       <ul></ul>

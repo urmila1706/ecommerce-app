@@ -1,10 +1,10 @@
-import ShowDetials from "./InputComponents/ShowingDetails";
+import ShowingDetials from './Components/InputComponents/ShowingDetails';
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <ShowDetials />
+      <ShowingDetials />
     </div>
   );
 }

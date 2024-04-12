@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+//import DisplayTotalAmount from "../DisplayDetails/DisplayTotalAmount";
 const InputDetails = (props) => {
   const [enteredId, setEnteredId] = useState("");
   const ProductIdChange = (event) => {
@@ -10,7 +10,7 @@ const InputDetails = (props) => {
     setEnteredAmount(event.target.value);
   };
   const [enteredName, setEnteredName] = useState("");
-  const [enterTotalAmount, setTotalAmount] = useState(0);
+ 
   const productNameChange = (event) => {
     setEnteredName(event.target.value);
   };
@@ -28,10 +28,11 @@ const InputDetails = (props) => {
   };
 
   const totalAmountHandler = () => {
-    // let totalamount = totalamount + enteredAmount;
-    setTotalAmount(+enteredAmount);
+    
+
+    //let totalamount = totalamount + enteredAmount;
   };
-  console.log(enterTotalAmount);
+  //console.log(enterTotalAmount);
   return (
     <React.Fragment>
       <form onSubmit={productSubmitHandler}>

@@ -1,8 +1,10 @@
-import React from "react";
+import React  from "react";
 const DisplayTotalAmount = (props) => {
+ 
   return (
     <React.Fragment>
-      <h2>Total value worth of Products : </h2>
+      <h2>Total value worth of Products :{props.amount}</h2>
+
     </React.Fragment>
   );
 };
